@@ -1,0 +1,87 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 10px; }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  color: #111; }
+
+.template {
+  height: 100vh;
+  background-color: antiquewhite;
+  position: relative; }
+  .template__card {
+    height: 60%;
+    width: 40%;
+    background-image: linear-gradient(90deg, transparent 0%, transparent 50%, #fff 50%), url(../images/perfume1.png);
+    background-size: cover;
+    background-position: 16%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem; }
+  .template__text {
+    width: 39%;
+    position: absolute;
+    top: 3.5rem;
+    right: 4rem; }
+    .template__text-h3 {
+      font-family: "Calistoga";
+      font-size: 4rem;
+      line-height: 3.4rem; }
+    .template__text-h4 {
+      padding-bottom: 2rem;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: .8rem;
+      color: #777; }
+  .template__paragraph {
+    color: #777;
+    padding-top: 3rem;
+    font-size: 1.3rem; }
+  .template__amount {
+    font-size: 3.4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #024418; }
+  .template__cart {
+    padding: 1.5rem 7rem;
+    border-radius: .7rem;
+    background-color: #024418;
+    position: relative;
+    transition: all .6s; }
+    .template__cart::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: .7rem;
+      background-color: #024418;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -2;
+      transition: all .6s; }
+    .template__cart:hover {
+      transform: translateY(-0.3rem); }
+    .template__cart:hover::after {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1.2); }
+    .template__cart-text {
+      font-size: 1.5rem;
+      text-align: center;
+      color: #fff;
+      transform: translateX(1.2rem); }
+    .template__cart-icon {
+      display: inline-block;
+      font-size: 1.5rem;
+      position: absolute;
+      color: #fff;
+      transform: translate(-1.5rem, -0.15rem); }

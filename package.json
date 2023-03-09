@@ -1,0 +1,14 @@
+{
+  "name": "perfume",
+  "version": "1.0.0",
+  "description": "A Product frontemd design",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "Ghalib",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
